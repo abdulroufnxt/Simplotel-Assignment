@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: -0.5px;
+    font-family: "Roboto";
+}
+
+.navCon {
+    display: flex;
+    background-color: #f77b6d;
+    justify-content: space-between;
+    padding: 10px;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+
+
+.navImage {
+    height: 20px;
+    align-self: center;
+}
+
+.listsCon {
+    display: flex;
+    list-style: none;
+    width: 60vw;
+    justify-content: space-between;
+
+    padding: 10px;
+}
+
+li {
+    cursor: pointer;
+    position: relative;
+    font-size: 15px;
+    font-family: "Bree serif";
+}
+
+li:after {
+    /* Im Adding The Animation */
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    background: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+li:hover::after {
+    transform: scaleX(1);
+}
+
+.burgerImage {
+    width: 400px;
+    height: 550px;
+}
+
+
+@media (max-width : 699px) {
+    .navBar {
+        display: none;
+    }
+
+    .navCon {
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .adjustCon {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .matterCon {
+        width: 700px;
+    }
+
+
+
+    .adjustCon {
+        display: flex;
+        width: 40px;
+    }
+
+    .burgerImage {
+        height: 500px;
+        width: 100%;
+    }
+
+    .nextCon {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redCard {
+        background-color: #f77b6d;
+        padding: 15px;
+        align-self: center;
+
+    }
+
+    .groupCon {
+        justify-content: center;
+    }
+
+    .redCard {
+        background-color: #f77b6d;
+        padding: 15px;
+        margin-bottom: 20px;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 250px;
+    }
+
+    .secondHeading {
+        text-align: center;
+        display: flex;
+        align-self: center;
+        margin-left: 110px;
+    }
+
+    .navImg {
+        height: 20px;
+    }
+
+}
+
+.paragraph {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.matterCon {
+    background-image: linear-gradient(to right, #decc7e, #c4aecf);
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adjustCon {
+    display: flex;
+    width: 100%;
+
+
+}
+
+.con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    padding: 20px;
+
+}
+
+
+
+.button {
+    background-color: #f77b6d;
+    width: 150px;
+    height: 35px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.nextCon {
+    margin-top: 10px;
+    background-image: linear-gradient(to right, #decc7e, #c4aecf);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.groupCon {
+    display: flex;
+    width: 30%;
+    align-self: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.firstTwoImages {
+    display: flex;
+    flex-direction: column;
+}
+
+.image2 {
+    width: 70%;
+    width: 100px;
+    height: 100px;
+}
+
+.image1 {
+    width: 70%;
+    width: 100px;
+    height: 100px;
+}
+
+.image3 {
+    width: 100px;
+    height: 200px;
+    margin-left: 5px;
+}
+
+.set {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.greater {
+    margin-top: 2px;
+}
+
+.minus {
+    margin-left: 15px;
+    margin-top: 4px;
+}
+
+.redCard {
+    background-color: #f77b6d;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+span {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.firstHeading {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.secondHeading {
+    letter-spacing: 2px;
+    width: 350px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 15px;
+    align-self: center;
+    text-align: left;
+}
+
+.arroCon {
+    display: flex;
+    align-items: center;
+}
+
+.clcik {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.overallContainer {
+    width: 100vw;
+
+
+}
